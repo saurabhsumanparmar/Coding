@@ -1,19 +1,112 @@
- Machine Coding .. parked till Monday: // Next Question https://www.geeksforgeeks.org/flipkart-interview-set-15-sde-ii/
  
- PS/DS : 1. Run code Nqueen
- 2. Run code boolean parentheis 
- 3. Alien Dictionary : Write code and compare this with circle of strings
- 4. Min cost path problem : Code complete, need to run this
- 5. Snake and ladder problem
- 6. Kth frequent value in stream: Done
- 7. Largest number formed from an array
- 8. Fix swapped values in BST : Done
- 9. No of turns in a binary tree
- 10. Similar Expression : Done
+Arrays + Maths : 1+ 
+Strings + Binary search + Two Pointer + Bit manipulation : 
+Stacks + Queue + Linked List : 
+Backtracking + Hashing : 
+Heaps + maps + Tree : 1 +
+DP + Greedy : 1 + 
+Graph : 
+ 
+
+
+ 
+
+TODO:
+
+This week Set : 
+
+Arrays + Binary search + Two Pointer + Maths:
+https://practice.geeksforgeeks.org/problems/overlapping-intervals/0 : Done
+https://practice.geeksforgeeks.org/problems/possible-words-from-phone-digits/0 : Done
+
+Strings +  + Bit manipulation : 
+
+
+Stacks + Queue : 
+
+
+Backtracking +  recursion: 
+
+
+Heaps + maps + Hashing:
+
+
+
+Linked List + Tree :
+Print top view of a tree : Done
+Boundary of tree : Done
+
+Do the below question in 20 min each ..just for fun
+Connect nodes at same level 
+reconstruct a tree from post order and inorder
+
+DP + Greedy : 
+Rod cutting : Done
+https://www.hackerrank.com/challenges/candies/problem :  partially done
+https://practice.geeksforgeeks.org/problems/convert-to-strictly-increasing-array/0 : Saw sol
+Boolean Parantehsis:
+
+
+Graph : 
+Topological sort: Done
+Alien dictionary : todo
+
+
+Fresh: 
+
+Machine Coding: 
+1. https://www.geeksforgeeks.org/flipkart-interview-set-15-sde-ii/
+
+Arrays + Binary search + Two Pointer + Maths: 1+
+https://www.hackerrank.com/challenges/crush/problem
+
+Strings +  + Bit manipulation : 
+https://www.hackerrank.com/challenges/common-child/problem
+
+Stacks + Queue : 
+https://www.hackerrank.com/challenges/poisonous-plants
+
+
+Backtracking +  recursion: 
+https://www.hackerrank.com/challenges/ctci-recursive-staircase/problem
+
+Heaps + maps + Hashing:
+https://www.hackerrank.com/challenges/frequency-queries
+
+
+Linked List + Tree :
+https://www.hackerrank.com/challenges/tree-huffman-decoding
+IsBST(15 min)
+
+DP + Greedy : 
+https://www.hackerrank.com/challenges/decibinary-numbers/problem
+
+
+Graph : 
+Alien Dictionary : Write code and compare this with circle of strings
+
+Debugging(Run the code) : 
+No Of turns in a tree: 
+Nqueen: Run code
+Run code boolean parentheis(Coded need to debug)
+Min cost path problem: Code complete, need to run this
+Boundary of a tree
+
+Seen( Do code in fix time) : 
+Largest number formed from an array
+Snake and ladder problem
+Keyboard problem: max no of A's
+Print AP in the array
+
+
+
+
+
  
  
- Seen problems : 
- 1. Reorder order list: https://practice.geeksforgeeks.org/problems/reorder-list/1
- 2. 
+ 
+ 
+ 
+
  
  
