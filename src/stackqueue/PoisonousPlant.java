@@ -17,13 +17,11 @@ public class PoisonousPlant {
 		int [] arr4 = {3, 2, 1};
 		System.out.println(maxNoDaysAfterWhichPlantsStopDying(arr4));
 		
-		// Run below test cases ...below ones failing 
 		int [] arr5 = {20, 5, 6, 15, 2, 2, 17, 2, 11, 5, 14, 5, 10, 9, 19, 12, 5};
 		System.out.println(maxNoDaysAfterWhichPlantsStopDying(arr5)); 
 		
-		// Run below test cases ...below ones failing 
 		int [] arr6 = {11, 7, 19, 6, 12, 12, 8, 8, 7, 1, 10, 15, 5, 12};
-		System.out.println(maxNoDaysAfterWhichPlantsStopDying(arr6));  // expected 5
+		System.out.println(maxNoDaysAfterWhichPlantsStopDying(arr6)); 
 	}
 	
 	public static int maxNoDaysAfterWhichPlantsStopDying(int [] arr) {
