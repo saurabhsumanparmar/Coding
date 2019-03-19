@@ -19,10 +19,11 @@ public class PoisonousPlant {
 		
 		// Run below test cases ...below ones failing 
 		int [] arr5 = {20, 5, 6, 15, 2, 2, 17, 2, 11, 5, 14, 5, 10, 9, 19, 12, 5};
-		System.out.println(maxNoDaysAfterWhichPlantsStopDying(arr5)); // Expected 4
+		System.out.println(maxNoDaysAfterWhichPlantsStopDying(arr5)); 
 		
-
-		
+		// Run below test cases ...below ones failing 
+		int [] arr6 = {11, 7, 19, 6, 12, 12, 8, 8, 7, 1, 10, 15, 5, 12};
+		System.out.println(maxNoDaysAfterWhichPlantsStopDying(arr6));  // expected 5
 	}
 	
 	public static int maxNoDaysAfterWhichPlantsStopDying(int [] arr) {
@@ -57,7 +58,7 @@ public class PoisonousPlant {
 					}
 					
 					i++;
-				} else {
+				} else if(arr[i] < valueStack.peek()){
 					if(valueStack.size() == 1) {
 						//i++;
 						break;
@@ -71,20 +72,36 @@ public class PoisonousPlant {
 						}
 						
 						if(valueStack.size() > 1) {
-							if(localMax+1 == noOfDaysStack.peek()) {
-								noOfDaysStack.pop();
-								valueStack.pop();
+							if(valueStack.peek() == arr[i]) {
+								if (noOfDaysStack.peek() == localMax) {
+									noOfDaysStack.pop();
+									noOfDaysStack.push(localMax+1);
+									maxDays = maxDays  < noOfDaysStack.peek() ? noOfDaysStack.peek(): maxDays;
+								} else if (noOfDaysStack.peek() == localMax +1) {
+									noOfDaysStack.push(noOfDaysStack.pop()+1);
+									maxDays = maxDays  < noOfDaysStack.peek() ? noOfDaysStack.peek(): maxDays;
+								} else if(noOfDaysStack.peek() < localMax) {
+									noOfDaysStack.pop();
+									noOfDaysStack.push(localMax);
+								} 
+							} else {
+								if(localMax+1 == noOfDaysStack.peek()) {
+									noOfDaysStack.pop();
+									valueStack.pop();
+								}
+								
+								valueStack.push(arr[i]);
+								noOfDaysStack.push(localMax+1);
+								
+								maxDays = maxDays <  localMax+1 ? localMax+1: maxDays;
 							}
-							
-							valueStack.push(arr[i]);
-							noOfDaysStack.push(localMax+1);
-							
-							maxDays = maxDays <  localMax+1 ? localMax+1: maxDays;
 						} else {
-							if(valueStack.peek() > arr[i]) {
+							if(valueStack.peek() >= arr[i]) {
+								maxDays = maxDays <  localMax ? localMax: maxDays;
 								//i++;
 								break;
-							} else {
+							} else if(valueStack.peek() < arr[i]){
+								
 								valueStack.push(arr[i]);
 								noOfDaysStack.push(localMax+1);
 								
@@ -94,6 +111,14 @@ public class PoisonousPlant {
 						
 						i++;				
 					}
+				} else { // when arr[i] == valueStack.peek()
+					if(i-1 >0 && arr[i-1] == valueStack.peek() && valueStack.size() >1) {
+						noOfDaysStack.push(noOfDaysStack.pop() +1);
+						
+						maxDays = maxDays  < noOfDaysStack.peek() ? noOfDaysStack.peek(): maxDays;
+					}
+					
+					i++;
 				}
 			}
 			
