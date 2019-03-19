@@ -21,10 +21,10 @@ public class Rotate2DMatrixInplace {
 		for(int i=0, j=0, count=n; i < n/2; i++, j++, count =count-2) {
 			
 			int offset = 0;
-			while(offset < count && count> 0)  {
+			while(offset < count -1 && count> 0)  {
 				
 				int topLefti = i;
-				int topLeftj = j;	
+				int topLeftj = j;
 				
 				int topRighti = topLefti;
 				int topRightj = topLeftj + count-1;
@@ -35,21 +35,20 @@ public class Rotate2DMatrixInplace {
 				int bottomLefti = bottomRighti;
 				int bottomLeftj = bottomRightj -(count-1);
 						
-				
 				//Right
 				int temp = arr[topRighti +offset][topRightj];
-				arr[topRighti+offset][topRightj] = arr[topRighti +offset][topLeftj];
+				arr[topRighti+offset][topRightj] = arr[topLefti][topLeftj +offset];
 
 				//Down
 				int temp2 = arr[bottomRighti] [bottomRightj - offset];
-				arr[bottomRightj - offset] [bottomRightj] = temp;
+				arr[bottomRighti] [bottomRightj - offset] = temp;
 				
 				//Left
 				temp = arr[bottomLefti - offset] [bottomLeftj];
 				arr[bottomLefti - offset] [bottomLeftj] = temp2;
 				
 				//Up
-				arr[topRighti +offset][topLeftj] = temp;
+				arr[topLefti][topLeftj +offset] = temp;
 				
 				offset++;
 			}
