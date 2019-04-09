@@ -1,7 +1,5 @@
 package treeandll;
 
-import com.parmar.TreeNode;
-
 public class DeserializeBinaryTree {
 	public static void main(String [] args) {
 		int [] inorder = {4, 6, 5, 2, 1, 7 , 9, 3, 8};

@@ -2,9 +2,6 @@ package treeandll;
 
 import java.util.Stack;
 
-import com.parmar.NodesAtDistanceKInTree;
-import com.parmar.TreeNode;
-
 public class PostOrderIterativeTraversal {
 	public static void main(String [] args) {
 		TreeNode root = new TreeNode(1);
