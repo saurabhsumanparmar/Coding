@@ -61,7 +61,7 @@ public class TopologicalSort {
 				int adjVertex = itr.next();
 				incomingEdges[adjVertex]--;
 				
-				if(incomingEdges[adjVertex] ==0) {
+				if(incomingEdges[adjVertex] == 0) {
 					q.add(adjVertex);
 				}
 			}

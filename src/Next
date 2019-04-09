@@ -1,15 +1,13 @@
  
 Arrays + Maths : 1+ 
 Strings + Binary search + Two Pointer + Bit manipulation : 
-Stacks + Queue + Linked List : 
+Stacks + Queue : 1 + 
+Linked List + Tree : 1+
 Backtracking + Hashing : 
-Heaps + maps + Tree : 1 +
+Heaps + maps : 1 +
 DP + Greedy : 1 + 
 Graph : 
- 
 
-
- 
 
 TODO:
 
@@ -23,7 +21,7 @@ Strings +  + Bit manipulation :
 
 
 Stacks + Queue : 
-
+https://www.hackerrank.com/challenges/poisonous-plants : Done
 
 Backtracking +  recursion: 
 
@@ -41,10 +39,12 @@ Connect nodes at same level
 reconstruct a tree from post order and inorder
 
 DP + Greedy : 
+https://www.hackerrank.com/challenges/abbr/problem 
 Rod cutting : Done
 https://www.hackerrank.com/challenges/candies/problem :  partially done
 https://practice.geeksforgeeks.org/problems/convert-to-strictly-increasing-array/0 : Saw sol
 Boolean Parantehsis:
+
 
 
 Graph : 
@@ -64,7 +64,7 @@ Strings +  + Bit manipulation :
 https://www.hackerrank.com/challenges/common-child/problem
 
 Stacks + Queue : 
-https://www.hackerrank.com/challenges/poisonous-plants
+
 
 
 Backtracking +  recursion: 
