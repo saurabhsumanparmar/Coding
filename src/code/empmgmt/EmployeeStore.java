@@ -10,9 +10,9 @@ public class EmployeeStore {
 	private int empid = 1;
 	
 	private Status addEmployee(Employee emp) {
-		if(map.get(emp.getEmilId())) {
+		/*if(map.get(emp.getEmilId())) {
 			
-		}
+		}*/
 		
 		//validateEmployeeDetails(emp);
 		
