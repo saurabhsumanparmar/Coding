@@ -21,6 +21,7 @@ public class WordLadderI {
 		System.out.println(ladderLength("TOON", "PLEA" , dict2)); // expected : 7
 	}
 	
+	// Code ran in one go ... 
 	public static int ladderLength(String start, String end, ArrayList<String> dictV) {
 		if(start.length() != end.length()) {
 			return 0;

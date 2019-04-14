@@ -4,6 +4,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+// Not optimised code  ...need to implement using Eularian tour and strongly connected component
 public class CircleOfStrings {
 	
 	/* Test cases: 
@@ -29,6 +30,8 @@ public class CircleOfStrings {
 	Output
 	0
 	1*/
+	
+	
 	public static void main(String [] args) {
 		/*CircleOfStrings testClass = new CircleOfStrings();
 		String [] arr = {"f", "for", "geek", "gale", "rig",  "egg", "kaf"};
@@ -58,8 +61,8 @@ public class CircleOfStrings {
 			
 		}*/
 		
-		/*String [] arr = {"f", "for", "geek", "gale", "rig",  "egg", "kaf"};
-		System.out.println("Is circle Found : " + isCircleFound(arr));*/
+		String [] arr = {"f", "for", "geek", "gale", "rig",  "egg", "kaf"};
+		System.out.println("Is circle Found : " + isCircleFound(arr));
 	}
 	
 	static class Node{
