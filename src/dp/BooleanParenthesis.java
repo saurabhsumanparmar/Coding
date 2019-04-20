@@ -55,14 +55,14 @@ public class BooleanParenthesis {
 		BooleanParenthesis testClass = new BooleanParenthesis();
 		char [] symbols = {'T', 'T', 'F', 'T'} ;
 		char [] operators = {'|', '&', '^'};
-		System.out.println(testClass.noofWaysToEvaluateTrue2(symbols, operators));
+		System.out.println(testClass.noofWaysToEvaluateTrue(symbols, operators));
 		
 		char [] symbols1 = {'T', 'F', 'F'} ;
 		char [] operators1 = {'^', '|'};
-		System.out.println(testClass.noofWaysToEvaluateTrue2(symbols1, operators1));
+		System.out.println(testClass.noofWaysToEvaluateTrue(symbols1, operators1));
 	}
 
-	private int noofWaysToEvaluateTrue2(char [] symbols, char [] operators) {
+	private int noofWaysToEvaluateTrue(char [] symbols, char [] operators) {
 		
 		int [][] T = new int[symbols.length][symbols.length];
 		int [][] F = new int[symbols.length][symbols.length];
