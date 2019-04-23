@@ -39,14 +39,23 @@ class GenerateAllPermutationOfString {
 	    
 	   
 	     for(int j=start; j <= end ; j++) {
-	        swap(input, start, j);
-	        generatePermutation(input, start+1, end, output);
-	        swap(input, start, j);
+	    	 if(!(isSameChar(input, start, j) && start !=j)) {
+	    		swap(input, start, j);
+	 	        generatePermutation(input, start+1, end, output);
+	 	        swap(input, start, j);
+	    	 }
 	     }
-	   
 	  }
 	  
-	  private void swap(char[] input, int i, int j) {
+	  private boolean isSameChar(char[] input, int start, int j) {
+		if(input[start] == input[j]) {
+			return true;
+		}
+		
+		return false;
+	}
+
+	private void swap(char[] input, int i, int j) {
 	     char temp = input[i];
 	     input[i] = input[j];
 	     input[j] = temp;
