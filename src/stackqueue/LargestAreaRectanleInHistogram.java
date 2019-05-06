@@ -44,4 +44,33 @@ public class LargestAreaRectanleInHistogram {
 			
 		return largestArea;
     }
+
+	public int largestRectangularArea(ArrayList<Integer> A) {
+		int maxArea = 0;
+		
+		Stack<Integer> stack = new Stack<Integer>();
+		
+		int i=0;
+		int topIndex;
+		
+		while(i < A.size()) {
+			if(stack.isEmpty() || A.get(stack.peek()) < A.get(i)) {
+				stack.push(i++);
+			} else {
+					topIndex = stack.pop();
+					
+					int localMax = A.get(topIndex) * (stack.isEmpty() ? i :  i - topIndex);
+					maxArea = maxArea > localMax ? maxArea : localMax;
+			}
+		}
+		
+		while(!stack.isEmpty()) {
+			topIndex = stack.pop();
+			
+			int localMax = A.get(topIndex) * (stack.isEmpty() ? i : i - topIndex);
+			maxArea = maxArea > localMax ? maxArea : localMax;
+		}
+		
+		return maxArea;
+	}
 }
