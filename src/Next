@@ -1,12 +1,50 @@
- 
-Arrays + Maths : 1+ 
-Strings + Binary search + Two Pointer + Bit manipulation : 
-Stacks + Queue : 1 + 
-Linked List + Tree : 1+
-Backtracking + Hashing : 
-Heaps + maps : 1 +
-DP + Greedy : 1 + 
+
+Interview sets:
+https://www.geeksforgeeks.org/amazon-interview-experience-set-248-4-8-yrs-experience-for-sde-ii/ : Done
+https://www.geeksforgeeks.org/amazon-interview-experience-3years-experience-sde-ii/ : Done
+https://www.geeksforgeeks.org/amazon-interview-experience-set-391-sde-2-5-5-years-experience/ :Done
+https://www.geeksforgeeks.org/software-engineer-interview-at-google-hyderabad/ : In progress
+
+
+Unseen to code : 
+Given an array of n integers, find the lexicographically smallest subsequence of length k.
+
+Not solved yet: 
+Given a matrix of people(denoted by small alphabets) and bikes(denoted by capital alphabets), find the nearest bike for a given person.
+How will you change your solution if you have to find bikes for a set of people? (assuming multiple bikes can be at the same distance from 1 person)
+
+Seen question to code(Confidence boost):
+Print all nodes at distance K from given node
+Connect nodes at same level
+https://www.geeksforgeeks.org/longest-repeating-and-non-overlapping-substring/
+
+
+Question 1 – You are given 3 array A, B, C you need to find all possible combinations such that A[i1] + B[i2] = B[i3] + C[i4].
+
+Question  2 – You are given with a string S. You need to find maximum length of string S after deleting some or none characters from S such that it can in form of T+T, where T is substring of S.
+
+For example S = abcababc, maximum length of string S will be 6 after deleting a, b from position 4, 5.
+
+
+https://www.geeksforgeeks.org/print-all-interleavings-of-given-two-strings/  : Done
+
+DP : 
+https://www.geeksforgeeks.org/weighted-job-scheduling/ : Done
+https://www.geeksforgeeks.org/boolean-parenthesization-problem-dp-37/ : Coding Done
+https://www.geeksforgeeks.org/shortest-common-supersequence/ : Done
+https://www.geeksforgeeks.org/matrix-chain-multiplication-dp-8/ : Coding Done
+https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/ : Coding Done
+https://www.interviewbit.com/problems/interleaving-strings/ : Done
+https://www.geeksforgeeks.org/minimum-cost-polygon-triangulation/ 
+https://www.geeksforgeeks.org/number-of-ways-of-scoring-r-runs-in-b-balls-with-at-most-w-wickets/ : Parked
+https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-k-times/ : Need to run code
+
+https://www.geeksforgeeks.org/dynamic-programming-trees-set-1/
+
 Graph : 
+https://www.geeksforgeeks.org/shortest-path-exactly-k-edges-directed-weighted-graph/ 
+ 
+General:
 
 
 TODO:
@@ -17,7 +55,7 @@ Arrays + Binary search + Two Pointer + Maths:
 https://practice.geeksforgeeks.org/problems/overlapping-intervals/0 : Done
 https://practice.geeksforgeeks.org/problems/possible-words-from-phone-digits/0 : Done
 
-Strings +  + Bit manipulation : 
+Strings + Bit manipulation : 
 
 
 Stacks + Queue : 
